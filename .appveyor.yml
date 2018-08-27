@@ -2,13 +2,13 @@ environment:
   VUE_TEMPLATES: '@("minimal", "full", "full-airbnb")'
 
 #cache:
- # - node_modules
-  #  - examples/full/node_modules
-   # - examples/full-airbnb/node_modules
-    #- examples/minimal/node_modules
-  #  - '%APPDATA%\npm-cache'
-   # - '%USERPROFILE%\.npm'
-    #- '%USERPROFILE%\.cache'
+  - node_modules
+    - examples/full/node_modules
+    - examples/full-airbnb/node_modules
+    - examples/minimal/node_modules
+    - '%APPDATA%\npm-cache'
+    - '%USERPROFILE%\.npm'
+    - '%USERPROFILE%\.cache'
 
 install:
   - ps: Install-Product node 8
